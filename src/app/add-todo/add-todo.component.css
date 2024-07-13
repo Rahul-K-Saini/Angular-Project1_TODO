@@ -1,0 +1,27 @@
+.container {
+    padding: 1rem;
+  }
+  
+  .add-todo-container {
+    display: flex;
+    gap: 1rem;
+    max-width: 300px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

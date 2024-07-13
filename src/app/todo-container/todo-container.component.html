@@ -1,0 +1,7 @@
+<section class="todo-container">
+    <app-add-todo (addTodoEvent)="addTodo($event)"></app-add-todo>
+    <ul>
+      <li *ngFor="let todo of todos">{{ todo }}</li>
+    </ul>
+  </section>
+  
