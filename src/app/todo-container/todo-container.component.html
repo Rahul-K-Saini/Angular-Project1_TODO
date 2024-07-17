@@ -1,7 +1,12 @@
 <section class="todo-container">
-    <app-add-todo (addTodoEvent)="addTodo($event)"></app-add-todo>
-    <ul>
-      <li *ngFor="let todo of todos">{{ todo }}</li>
-    </ul>
-  </section>
-  
+  <app-add-todo (addTodoEvent)="addTodo($event)"></app-add-todo>
+  <ul>
+    <li *ngFor="let todo of todos; let i = index">
+      <span *ngIf="!isInputMode[i]">{{ todo.todo }}</span>
+      <input *ngIf="isInputMode[i]" type="text" [(ngModel)]="newData" />
+      <button *ngIf="!isInputMode[i]" (click)="editTodoMode(i)">Edit</button>
+      <button *ngIf="isInputMode[i]" (click)="saveTodo(i)">Save</button>
+      <button (click)="deleteTodo(i)">X</button>
+    </li>
+  </ul>
+</section>

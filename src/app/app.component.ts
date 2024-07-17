@@ -12,5 +12,5 @@ import { TodoContainerComponent } from './todo-container/todo-container.componen
 })
 
 export class AppComponent {
-  title = 'First Angular App';
+  title = 'TODO App';
 }

@@ -11,7 +11,10 @@ import { FormsModule } from '@angular/forms';
 export class AddTodoComponent {
   newTodo: string = '';
   @Output() addTodoEvent = new EventEmitter<string>();
-
+  @Output() deleteTodoEvent = new EventEmitter<string>();
+  deleteTodo(){
+    
+  }
   addTodo() {
     if (this.newTodo.trim()) {
       this.addTodoEvent.emit(this.newTodo);

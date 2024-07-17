@@ -11,4 +11,9 @@
     padding: 0.5rem 0;
     border-bottom: 1px solid #ddd;
   }
+
+  button{
+    margin-left: 2rem;
+    cursor: pointer;
+  }
   
